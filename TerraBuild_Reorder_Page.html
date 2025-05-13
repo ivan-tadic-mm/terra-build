@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TerraBuild Manufacturing - Reorder Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #6da544;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 24px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .product img {
+        width: 150px;
+        height: auto;
+        border-radius: 5px;
+      }
+      .product-info {
+        flex: 2;
+        margin-left: 20px;
+      }
+      .product-price {
+        flex: 1;
+        text-align: right;
+      }
+      .product-quantity input {
+        width: 50px;
+        text-align: center;
+      }
+      .order-summary {
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+      }
+      .order-summary div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+      button {
+        background-color: #6da544;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #5c9440;
+      }
+    </style>
+  </head>
+  <body>
+    <header>TerraBuild Manufacturing - Reorder Page</header>
+
+    <div class="container">
+      <div class="product">
+        <img src="Titan5000.png" alt="TerraBuild Titan 5000" />
+        <div class="product-info">
+          <h3>TerraBuild Titan 5000</h3>
+          <p>
+            Heavy-duty tractor with 320 HP engine and full hydraulic system.
+          </p>
+        </div>
+        <div class="product-price">
+          <strong>€175,000</strong>
+        </div>
+        <div class="product-quantity">
+          <input type="number" value="1" min="1" />
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="Forge750.png" alt="TerraBuild Forge 750 Harvester" />
+        <div class="product-info">
+          <h3>TerraBuild Forge 750 Harvester</h3>
+          <p>
+            Advanced agricultural harvester with 400 HP and 9.2m cutting width.
+          </p>
+        </div>
+        <div class="product-price">
+          <strong>€245,000</strong>
+        </div>
+        <div class="product-quantity">
+          <input type="number" value="1" min="1" />
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="Boulder250.png" alt="TerraBuild Boulder 250 Loader" />
+        <div class="product-info">
+          <h3>TerraBuild Boulder 250 Loader</h3>
+          <p>
+            Powerful loader with 180 HP engine and 2.5 cubic meter capacity.
+          </p>
+        </div>
+        <div class="product-price">
+          <strong>€125,000</strong>
+        </div>
+        <div class="product-quantity">
+          <input type="number" value="1" min="1" />
+        </div>
+      </div>
+
+      <div class="order-summary">
+        <div><span>Subtotal:</span> <span>€545,000</span></div>
+        <div><span>Estimated Tax:</span> <span>€65,400</span></div>
+        <div><strong>Total:</strong> <strong>€610,400</strong></div>
+      </div>
+
+      <button>Place Order</button>
+    </div>
+  </body>
+</html>
